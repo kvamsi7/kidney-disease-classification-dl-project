@@ -33,6 +33,7 @@ cython_debug/
 
 
 artifacts/*
+
 src/kidney_cnn_classifier/compnents/__pycache__/__init__.cpython-38.pyc
 src/kidney_cnn_classifier/compnents/__pycache__/data_ingestion.cpython-38.pyc
 src/kidney_cnn_classifier/config/__pycache__/__init__.cpython-38.pyc
@@ -45,3 +46,5 @@ src/kidney_cnn_classifier/pipeline/__pycache__/__init__.cpython-38.pyc
 src/kidney_cnn_classifier/pipeline/__pycache__/stage_01_data_ingestion.cpython-38.pyc
 src/kidney_cnn_classifier/utils/__pycache__/common.cpython-38.pyc
 src/kidney_cnn_classifier/utils/__pycache__/__init__.cpython-38.pyc
+src/kidney_cnn_classifier/compnents/__pycache__/prepare_base_model.cpython-38.pyc
+src/kidney_cnn_classifier/pipeline/__pycache__/stage_02_prepare_base_model.cpython-38.pyc
