@@ -1,0 +1,47 @@
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scracy stuff:
+.scrapy
+
+# Shinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# jupyter notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+
+#pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+
+artifacts/*
+src/kidney_cnn_classifier/compnents/__pycache__/__init__.cpython-38.pyc
+src/kidney_cnn_classifier/compnents/__pycache__/data_ingestion.cpython-38.pyc
+src/kidney_cnn_classifier/config/__pycache__/__init__.cpython-38.pyc
+src/kidney_cnn_classifier/config/__pycache__/configuration.cpython-38.pyc
+src/kidney_cnn_classifier/constants/__pycache__/__init__.cpython-38.pyc
+logs/running_logs.log
+src/kidney_cnn_classifier/entity/__pycache__/__init__.cpython-38.pyc
+src/kidney_cnn_classifier/entity/__pycache__/config_entity.cpython-38.pyc
+src/kidney_cnn_classifier/pipeline/__pycache__/__init__.cpython-38.pyc
+src/kidney_cnn_classifier/pipeline/__pycache__/stage_01_data_ingestion.cpython-38.pyc
+src/kidney_cnn_classifier/utils/__pycache__/common.cpython-38.pyc
+src/kidney_cnn_classifier/utils/__pycache__/__init__.cpython-38.pyc

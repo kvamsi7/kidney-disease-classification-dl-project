@@ -1,7 +1,7 @@
 import os
 from box.exceptions import BoxValueError
 import yaml
-from cnn_classifier_logger import logger
+from src.kidney_cnn_classifier import logger
 import json
 import joblib
 from ensure import ensure_annotations
