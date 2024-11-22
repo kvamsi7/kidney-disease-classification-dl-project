@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/ML%20Block/Projects/ETE%20AI%20Projects/kidney-disease-classification-dl-project/mlruns/595620893385563115/7747474edca14e5ab18a55688befa6ee/artifacts
+end_time: 1732303967013
+entry_point_name: ''
+experiment_id: '595620893385563115'
+lifecycle_stage: active
+run_id: 7747474edca14e5ab18a55688befa6ee
+run_name: skittish-ox-347
+run_uuid: 7747474edca14e5ab18a55688befa6ee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732303960360
+status: 3
+tags: []
+user_id: vamsi7
