@@ -638,3 +638,42 @@ x=========x]
 [2024-11-22 23:54:44,723: INFO: main: >>>>>>>>>> stage Model Evaluation with MLflow stage completed <<<<<<<<
 
 x=========x]
+[2024-11-22 23:58:39,028: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<<]
+[2024-11-22 23:58:39,030: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-22 23:58:39,032: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-22 23:58:39,032: INFO: common: created directory at: artifacts]
+[2024-11-22 23:58:39,032: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-22 23:58:39,033: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1_ikKoonQOS56n_hS_j5WBYY9XfYA4YeI/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-11-23 00:00:24,472: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1_ikKoonQOS56n_hS_j5WBYY9XfYA4YeI/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-11-23 00:00:30,392: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<< 
+
+x==============x]
+[2024-11-23 00:00:30,392: INFO: main: *****************]
+[2024-11-23 00:00:30,392: INFO: main: >>>>>>>>> stage Prepare base model started <<<<<<<<<<<]
+[2024-11-23 00:00:30,394: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 00:00:30,395: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-23 00:00:30,395: INFO: common: created directory at: artifacts]
+[2024-11-23 00:00:30,396: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-11-23 00:00:30,706: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-11-23 00:00:30,843: INFO: main: >>>>>>>>>> stage Prepare base model completed <<<<<<
+
+x============x]
+[2024-11-23 00:00:30,843: INFO: main: *****************]
+[2024-11-23 00:00:30,844: INFO: main: >>>>>>> stage Training started <<<<<<<<<]
+[2024-11-23 00:00:30,846: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 00:00:30,849: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-23 00:00:30,849: INFO: common: created directory at: artifacts]
+[2024-11-23 00:00:30,850: INFO: common: created directory at: artifacts\training]
+[2024-11-23 00:36:14,268: INFO: main: >>>>>>>> stage Training completed <<<<<<<<
+
+x=========x]
+[2024-11-23 00:36:14,269: INFO: main: ****************]
+[2024-11-23 00:36:14,269: INFO: main: >>>>>>> stage Model Evaluation with MLflow stage started <<<<<<<<<]
+[2024-11-23 00:36:14,272: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-23 00:36:14,274: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-23 00:36:14,274: INFO: common: created directory at: artifacts]
+[2024-11-23 00:38:23,379: INFO: common: json file saved at: scores.json]
+[2024-11-23 00:38:26,483: INFO: builder_impl: Assets written to: C:\Users\vamsi7\AppData\Local\Temp\tmp8iy2dxbu\model\data\model\assets]
+[2024-11-23 00:39:20,238: INFO: main: >>>>>>>>>> stage Model Evaluation with MLflow stage completed <<<<<<<<
+
+x=========x]

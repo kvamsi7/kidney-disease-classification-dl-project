@@ -54,7 +54,7 @@ class Evaluation:
         mlflow.set_experiment("kidney_disease_classification_tracking")
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
 
-        with mlflow.start_run(run_name='Run1'):
+        with mlflow.start_run(run_name='Run2'):
             mlflow.log_params(self.config.all_params)
             mlflow.log_metrics(
                 {"loss": self.score[0], "accuracy": self.score[1]}
