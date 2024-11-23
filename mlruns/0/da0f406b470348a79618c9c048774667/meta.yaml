@@ -1,0 +1,15 @@
+artifact_uri: file:///d:/ML%20Block/Projects/ETE%20AI%20Projects/kidney-disease-classification-dl-project/mlruns/0/da0f406b470348a79618c9c048774667/artifacts
+end_time: 1732339746714
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: da0f406b470348a79618c9c048774667
+run_name: Run1
+run_uuid: da0f406b470348a79618c9c048774667
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1732339739471
+status: 3
+tags: []
+user_id: vamsi7

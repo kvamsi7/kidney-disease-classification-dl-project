@@ -1,4 +1,4 @@
-# kidney-disease-classification-dl-project
+# Kidney Tumour Detection using Deep Learning
 Kidney Disease Classification MLflow DVC
 
 ## Workflows

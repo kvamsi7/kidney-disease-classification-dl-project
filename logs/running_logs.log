@@ -294,3 +294,347 @@ x=========x]
 [2024-11-22 13:30:37,364: INFO: common: yaml file: params.yaml loaded successfully]
 [2024-11-22 13:32:40,340: INFO: common: json file saved at: scores.json]
 [2024-11-22 13:32:41,691: INFO: builder_impl: Assets written to: C:\Users\vamsi7\AppData\Local\Temp\tmpkn1matub\model\data\model\assets]
+[2024-11-22 14:41:45,361: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-22 14:41:45,363: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-22 14:43:51,497: INFO: common: json file saved at: scores.json]
+[2024-11-22 14:43:54,427: INFO: builder_impl: Assets written to: C:\Users\vamsi7\AppData\Local\Temp\tmp0k47emj4\model\data\model\assets]
+[2024-11-22 15:27:15,510: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-22 15:27:15,514: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-22 15:29:26,125: INFO: common: json file saved at: scores.json]
+[2024-11-22 15:29:28,529: INFO: builder_impl: Assets written to: C:\Users\vamsi7\AppData\Local\Temp\tmphntzrjkc\model\data\model\assets]
+[2024-11-22 15:55:06,013: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<<]
+[2024-11-22 15:55:06,014: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-22 15:55:06,016: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-22 15:55:06,016: INFO: common: created directory at: artifacts]
+[2024-11-22 15:55:06,017: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-22 15:55:06,017: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1_ikKoonQOS56n_hS_j5WBYY9XfYA4YeI/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-11-22 15:56:55,081: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1_ikKoonQOS56n_hS_j5WBYY9XfYA4YeI/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-11-22 15:57:03,898: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<< 
+
+x==============x]
+[2024-11-22 15:57:03,898: INFO: main: *****************]
+[2024-11-22 15:57:03,898: INFO: main: >>>>>>>>> stage Prepare base model started <<<<<<<<<<<]
+[2024-11-22 15:57:03,900: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-22 15:57:03,901: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-22 15:57:03,901: INFO: common: created directory at: artifacts]
+[2024-11-22 15:57:03,902: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-11-22 15:57:04,289: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-11-22 15:57:04,567: INFO: main: >>>>>>>>>> stage Prepare base model completed <<<<<<
+
+x============x]
+[2024-11-22 15:57:04,567: INFO: main: *****************]
+[2024-11-22 15:57:04,567: INFO: main: >>>>>>> stage Training started <<<<<<<<<]
+[2024-11-22 15:57:04,569: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-22 15:57:04,571: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-22 15:57:04,571: INFO: common: created directory at: artifacts]
+[2024-11-22 15:57:04,572: INFO: common: created directory at: artifacts\training]
+[2024-11-22 16:03:34,602: INFO: main: >>>>>>>> stage Training completed <<<<<<<<
+
+x=========x]
+[2024-11-22 16:03:34,602: INFO: main: ****************]
+[2024-11-22 16:03:34,603: INFO: main: >>>>>>> stage Model Evaluation with MLflow stage started <<<<<<<<<]
+[2024-11-22 16:03:34,604: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-22 16:03:34,606: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-22 16:03:34,606: INFO: common: created directory at: artifacts]
+[2024-11-22 16:05:30,885: INFO: common: json file saved at: scores.json]
+[2024-11-22 16:05:32,036: ERROR: main: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: '']
+Traceback (most recent call last):
+  File "main.py", line 51, in <module>
+    model_evaluation.main()
+  File "D:\ML Block\Projects\ETE AI Projects\kidney-disease-classification-dl-project\src\kidney_cnn_classifier\pipeline\stage_04_model_evaluation_with_mlflow.py", line 21, in main
+    raise e
+  File "D:\ML Block\Projects\ETE AI Projects\kidney-disease-classification-dl-project\src\kidney_cnn_classifier\pipeline\stage_04_model_evaluation_with_mlflow.py", line 19, in main
+    evaluation.log_into_mlflow()
+  File "D:\ML Block\Projects\ETE AI Projects\kidney-disease-classification-dl-project\src\kidney_cnn_classifier\compnents\model_evaluation_mlflow.py", line 57, in log_into_mlflow
+    with mlflow.start_run():
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\tracking\fluent.py", line 418, in start_run
+    active_run_obj = client.create_run(
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\tracking\client.py", line 393, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 168, in create_run
+    return self.store.create_run(
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\store\tracking\rest_store.py", line 209, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\store\tracking\rest_store.py", line 82, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\utils\rest_utils.py", line 370, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\utils\rest_utils.py", line 246, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: ''
+[2024-11-22 21:58:43,694: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<<]
+[2024-11-22 21:58:43,696: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-22 21:58:43,698: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-22 21:58:43,698: INFO: common: created directory at: artifacts]
+[2024-11-22 21:58:43,699: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-22 21:58:43,699: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1_ikKoonQOS56n_hS_j5WBYY9XfYA4YeI/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-11-22 22:00:46,074: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1_ikKoonQOS56n_hS_j5WBYY9XfYA4YeI/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-11-22 22:00:53,605: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<< 
+
+x==============x]
+[2024-11-22 22:00:53,605: INFO: main: *****************]
+[2024-11-22 22:00:53,606: INFO: main: >>>>>>>>> stage Prepare base model started <<<<<<<<<<<]
+[2024-11-22 22:00:53,607: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-22 22:00:53,608: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-22 22:00:53,609: INFO: common: created directory at: artifacts]
+[2024-11-22 22:00:53,609: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-11-22 22:00:53,970: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-11-22 22:00:54,245: INFO: main: >>>>>>>>>> stage Prepare base model completed <<<<<<
+
+x============x]
+[2024-11-22 22:00:54,246: INFO: main: *****************]
+[2024-11-22 22:00:54,246: INFO: main: >>>>>>> stage Training started <<<<<<<<<]
+[2024-11-22 22:00:54,247: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-22 22:00:54,249: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-22 22:00:54,249: INFO: common: created directory at: artifacts]
+[2024-11-22 22:00:54,249: INFO: common: created directory at: artifacts\training]
+[2024-11-22 22:07:31,894: INFO: main: >>>>>>>> stage Training completed <<<<<<<<
+
+x=========x]
+[2024-11-22 22:07:31,894: INFO: main: ****************]
+[2024-11-22 22:07:31,894: INFO: main: >>>>>>> stage Model Evaluation with MLflow stage started <<<<<<<<<]
+[2024-11-22 22:07:31,896: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-22 22:07:31,897: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-22 22:07:31,897: INFO: common: created directory at: artifacts]
+[2024-11-22 22:09:36,185: INFO: common: json file saved at: scores.json]
+[2024-11-22 22:09:37,271: ERROR: main: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: '']
+Traceback (most recent call last):
+  File "main.py", line 51, in <module>
+    model_evaluation.main()
+  File "D:\ML Block\Projects\ETE AI Projects\kidney-disease-classification-dl-project\src\kidney_cnn_classifier\pipeline\stage_04_model_evaluation_with_mlflow.py", line 21, in main
+    raise e
+  File "D:\ML Block\Projects\ETE AI Projects\kidney-disease-classification-dl-project\src\kidney_cnn_classifier\pipeline\stage_04_model_evaluation_with_mlflow.py", line 19, in main
+    evaluation.log_into_mlflow()
+  File "D:\ML Block\Projects\ETE AI Projects\kidney-disease-classification-dl-project\src\kidney_cnn_classifier\compnents\model_evaluation_mlflow.py", line 57, in log_into_mlflow
+    with mlflow.start_run():
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\tracking\fluent.py", line 418, in start_run
+    active_run_obj = client.create_run(
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\tracking\client.py", line 393, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 168, in create_run
+    return self.store.create_run(
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\store\tracking\rest_store.py", line 209, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\store\tracking\rest_store.py", line 82, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\utils\rest_utils.py", line 370, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\utils\rest_utils.py", line 246, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: ''
+[2024-11-22 22:37:18,473: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-22 22:37:18,475: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-22 22:39:26,620: INFO: common: json file saved at: scores.json]
+[2024-11-22 22:39:29,251: INFO: builder_impl: Assets written to: C:\Users\vamsi7\AppData\Local\Temp\tmptb4nplei\model\data\model\assets]
+[2024-11-22 22:50:16,191: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<<]
+[2024-11-22 22:50:16,193: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-22 22:50:16,194: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-22 22:50:16,195: INFO: common: created directory at: artifacts]
+[2024-11-22 22:50:16,195: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-22 22:50:16,195: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1_ikKoonQOS56n_hS_j5WBYY9XfYA4YeI/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-11-22 22:52:46,947: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1_ikKoonQOS56n_hS_j5WBYY9XfYA4YeI/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-11-22 22:52:53,748: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<< 
+
+x==============x]
+[2024-11-22 22:52:53,749: INFO: main: *****************]
+[2024-11-22 22:52:53,749: INFO: main: >>>>>>>>> stage Prepare base model started <<<<<<<<<<<]
+[2024-11-22 22:52:53,751: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-22 22:52:53,752: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-22 22:52:53,753: INFO: common: created directory at: artifacts]
+[2024-11-22 22:52:53,753: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-11-22 22:52:54,162: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-11-22 22:52:54,412: INFO: main: >>>>>>>>>> stage Prepare base model completed <<<<<<
+
+x============x]
+[2024-11-22 22:52:54,412: INFO: main: *****************]
+[2024-11-22 22:52:54,412: INFO: main: >>>>>>> stage Training started <<<<<<<<<]
+[2024-11-22 22:52:54,413: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-22 22:52:54,415: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-22 22:52:54,415: INFO: common: created directory at: artifacts]
+[2024-11-22 22:52:54,416: INFO: common: created directory at: artifacts\training]
+[2024-11-22 22:59:32,060: INFO: main: >>>>>>>> stage Training completed <<<<<<<<
+
+x=========x]
+[2024-11-22 22:59:32,060: INFO: main: ****************]
+[2024-11-22 22:59:32,060: INFO: main: >>>>>>> stage Model Evaluation with MLflow stage started <<<<<<<<<]
+[2024-11-22 22:59:32,062: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-22 22:59:32,064: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-22 22:59:32,064: INFO: common: created directory at: artifacts]
+[2024-11-22 23:01:29,692: INFO: common: json file saved at: scores.json]
+[2024-11-22 23:01:30,758: ERROR: main: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: '']
+Traceback (most recent call last):
+  File "main.py", line 51, in <module>
+    model_evaluation.main()
+  File "D:\ML Block\Projects\ETE AI Projects\kidney-disease-classification-dl-project\src\kidney_cnn_classifier\pipeline\stage_04_model_evaluation_with_mlflow.py", line 21, in main
+    raise e
+  File "D:\ML Block\Projects\ETE AI Projects\kidney-disease-classification-dl-project\src\kidney_cnn_classifier\pipeline\stage_04_model_evaluation_with_mlflow.py", line 19, in main
+    evaluation.log_into_mlflow()
+  File "D:\ML Block\Projects\ETE AI Projects\kidney-disease-classification-dl-project\src\kidney_cnn_classifier\compnents\model_evaluation_mlflow.py", line 57, in log_into_mlflow
+    with mlflow.start_run(run_name='Run1'):
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\tracking\fluent.py", line 418, in start_run
+    active_run_obj = client.create_run(
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\tracking\client.py", line 393, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 168, in create_run
+    return self.store.create_run(
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\store\tracking\rest_store.py", line 209, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\store\tracking\rest_store.py", line 82, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\utils\rest_utils.py", line 370, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\utils\rest_utils.py", line 246, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: ''
+[2024-11-22 23:05:00,046: INFO: main: ****************]
+[2024-11-22 23:05:00,046: INFO: main: >>>>>>> stage Model Evaluation with MLflow stage started <<<<<<<<<]
+[2024-11-22 23:05:00,048: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-22 23:05:00,049: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-22 23:05:00,050: INFO: common: created directory at: artifacts]
+[2024-11-22 23:06:54,181: INFO: common: json file saved at: scores.json]
+[2024-11-22 23:06:55,226: ERROR: main: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: '']
+Traceback (most recent call last):
+  File "main.py", line 51, in <module>
+    model_evaluation.main()
+  File "D:\ML Block\Projects\ETE AI Projects\kidney-disease-classification-dl-project\src\kidney_cnn_classifier\pipeline\stage_04_model_evaluation_with_mlflow.py", line 21, in main
+    raise e
+  File "D:\ML Block\Projects\ETE AI Projects\kidney-disease-classification-dl-project\src\kidney_cnn_classifier\pipeline\stage_04_model_evaluation_with_mlflow.py", line 19, in main
+    evaluation.log_into_mlflow()
+  File "D:\ML Block\Projects\ETE AI Projects\kidney-disease-classification-dl-project\src\kidney_cnn_classifier\compnents\model_evaluation_mlflow.py", line 57, in log_into_mlflow
+    with mlflow.start_run(run_name='Run1'):
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\tracking\fluent.py", line 418, in start_run
+    active_run_obj = client.create_run(
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\tracking\client.py", line 393, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 168, in create_run
+    return self.store.create_run(
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\store\tracking\rest_store.py", line 209, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\store\tracking\rest_store.py", line 82, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\utils\rest_utils.py", line 370, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\utils\rest_utils.py", line 246, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: ''
+[2024-11-22 23:20:24,979: INFO: main: ****************]
+[2024-11-22 23:20:24,980: INFO: main: >>>>>>> stage Model Evaluation with MLflow stage started <<<<<<<<<]
+[2024-11-22 23:20:24,982: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-22 23:20:24,983: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-22 23:20:24,983: INFO: common: created directory at: artifacts]
+[2024-11-22 23:22:18,664: INFO: common: json file saved at: scores.json]
+[2024-11-22 23:22:19,529: ERROR: main: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: '']
+Traceback (most recent call last):
+  File "main.py", line 51, in <module>
+    model_evaluation.main()
+  File "D:\ML Block\Projects\ETE AI Projects\kidney-disease-classification-dl-project\src\kidney_cnn_classifier\pipeline\stage_04_model_evaluation_with_mlflow.py", line 21, in main
+    raise e
+  File "D:\ML Block\Projects\ETE AI Projects\kidney-disease-classification-dl-project\src\kidney_cnn_classifier\pipeline\stage_04_model_evaluation_with_mlflow.py", line 19, in main
+    evaluation.log_into_mlflow()
+  File "D:\ML Block\Projects\ETE AI Projects\kidney-disease-classification-dl-project\src\kidney_cnn_classifier\compnents\model_evaluation_mlflow.py", line 57, in log_into_mlflow
+    with mlflow.start_run(run_name='Run1'):
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\tracking\fluent.py", line 418, in start_run
+    active_run_obj = client.create_run(
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\tracking\client.py", line 393, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 168, in create_run
+    return self.store.create_run(
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\store\tracking\rest_store.py", line 209, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\store\tracking\rest_store.py", line 82, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\utils\rest_utils.py", line 370, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\utils\rest_utils.py", line 246, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: ''
+[2024-11-22 23:24:18,796: INFO: main: ****************]
+[2024-11-22 23:24:18,796: INFO: main: >>>>>>> stage Model Evaluation with MLflow stage started <<<<<<<<<]
+[2024-11-22 23:24:18,798: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-22 23:24:18,799: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-22 23:24:18,800: INFO: common: created directory at: artifacts]
+[2024-11-22 23:26:13,332: INFO: common: json file saved at: scores.json]
+[2024-11-22 23:26:14,212: ERROR: main: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: '']
+Traceback (most recent call last):
+  File "main.py", line 51, in <module>
+    model_evaluation.main()
+  File "D:\ML Block\Projects\ETE AI Projects\kidney-disease-classification-dl-project\src\kidney_cnn_classifier\pipeline\stage_04_model_evaluation_with_mlflow.py", line 21, in main
+    raise e
+  File "D:\ML Block\Projects\ETE AI Projects\kidney-disease-classification-dl-project\src\kidney_cnn_classifier\pipeline\stage_04_model_evaluation_with_mlflow.py", line 19, in main
+    evaluation.log_into_mlflow()
+  File "D:\ML Block\Projects\ETE AI Projects\kidney-disease-classification-dl-project\src\kidney_cnn_classifier\compnents\model_evaluation_mlflow.py", line 57, in log_into_mlflow
+    with mlflow.start_run(run_name='Run1'):
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\tracking\fluent.py", line 418, in start_run
+    active_run_obj = client.create_run(
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\tracking\client.py", line 393, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 168, in create_run
+    return self.store.create_run(
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\store\tracking\rest_store.py", line 209, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\store\tracking\rest_store.py", line 82, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\utils\rest_utils.py", line 370, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\utils\rest_utils.py", line 246, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: ''
+[2024-11-22 23:27:05,252: INFO: main: ****************]
+[2024-11-22 23:27:05,252: INFO: main: >>>>>>> stage Model Evaluation with MLflow stage started <<<<<<<<<]
+[2024-11-22 23:27:05,254: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-22 23:27:05,256: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-22 23:27:05,256: INFO: common: created directory at: artifacts]
+[2024-11-22 23:28:58,829: INFO: common: json file saved at: scores.json]
+[2024-11-22 23:29:00,699: INFO: builder_impl: Assets written to: C:\Users\vamsi7\AppData\Local\Temp\tmpgmng1t8c\model\data\model\assets]
+[2024-11-22 23:29:06,716: INFO: main: >>>>>>>>>> stage Model Evaluation with MLflow stage completed <<<<<<<<
+
+x=========x]
+[2024-11-22 23:33:47,252: INFO: main: ****************]
+[2024-11-22 23:33:47,253: INFO: main: >>>>>>> stage Model Evaluation with MLflow stage started <<<<<<<<<]
+[2024-11-22 23:33:47,255: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-22 23:33:47,256: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-22 23:33:47,256: INFO: common: created directory at: artifacts]
+[2024-11-22 23:35:44,857: INFO: common: json file saved at: scores.json]
+[2024-11-22 23:35:46,885: INFO: builder_impl: Assets written to: C:\Users\vamsi7\AppData\Local\Temp\tmpxqpqsbs7\model\data\model\assets]
+[2024-11-22 23:35:53,042: INFO: main: >>>>>>>>>> stage Model Evaluation with MLflow stage completed <<<<<<<<
+
+x=========x]
+[2024-11-22 23:41:42,721: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<<]
+[2024-11-22 23:41:42,723: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-22 23:41:42,724: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-22 23:41:42,725: INFO: common: created directory at: artifacts]
+[2024-11-22 23:41:42,725: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-22 23:41:42,725: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1_ikKoonQOS56n_hS_j5WBYY9XfYA4YeI/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-11-22 23:43:22,527: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1_ikKoonQOS56n_hS_j5WBYY9XfYA4YeI/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-11-22 23:43:28,658: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<< 
+
+x==============x]
+[2024-11-22 23:43:28,658: INFO: main: *****************]
+[2024-11-22 23:43:28,658: INFO: main: >>>>>>>>> stage Prepare base model started <<<<<<<<<<<]
+[2024-11-22 23:43:28,660: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-22 23:43:28,661: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-22 23:43:28,662: INFO: common: created directory at: artifacts]
+[2024-11-22 23:43:28,662: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-11-22 23:43:28,973: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-11-22 23:43:29,104: INFO: main: >>>>>>>>>> stage Prepare base model completed <<<<<<
+
+x============x]
+[2024-11-22 23:43:29,105: INFO: main: *****************]
+[2024-11-22 23:43:29,105: INFO: main: >>>>>>> stage Training started <<<<<<<<<]
+[2024-11-22 23:43:29,107: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-22 23:43:29,108: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-22 23:43:29,109: INFO: common: created directory at: artifacts]
+[2024-11-22 23:43:29,109: INFO: common: created directory at: artifacts\training]
+[2024-11-22 23:50:18,848: INFO: main: >>>>>>>> stage Training completed <<<<<<<<
+
+x=========x]
+[2024-11-22 23:51:43,650: INFO: main: ****************]
+[2024-11-22 23:51:43,650: INFO: main: >>>>>>> stage Model Evaluation with MLflow stage started <<<<<<<<<]
+[2024-11-22 23:51:43,652: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-22 23:51:43,654: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-22 23:51:43,654: INFO: common: created directory at: artifacts]
+[2024-11-22 23:53:48,886: INFO: common: json file saved at: scores.json]
+[2024-11-22 23:53:51,598: INFO: builder_impl: Assets written to: C:\Users\vamsi7\AppData\Local\Temp\tmp6qtqvv4s\model\data\model\assets]
+[2024-11-22 23:54:44,723: INFO: main: >>>>>>>>>> stage Model Evaluation with MLflow stage completed <<<<<<<<
+
+x=========x]
