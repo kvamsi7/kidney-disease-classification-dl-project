@@ -778,3 +778,195 @@ mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/
 [2024-11-26 00:48:00,023: INFO: stage_04_model_evaluation_with_mlflow: >>>>>>>> stage Evaluation stage completed <<<<<<<<
 
 x=========x]
+[2024-11-26 09:52:54,226: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.215:8080]
+[2024-11-26 09:52:54,228: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-11-26 09:53:34,971: INFO: _internal: 127.0.0.1 - - [26/Nov/2024 09:53:34] "GET / HTTP/1.1" 200 -]
+[2024-11-26 09:56:18,146: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "D:\ML Block\Projects\ETE AI Projects\kidney-disease-classification-dl-project\src\kidney_cnn_classifier\pipeline\prediction.py", line 13, in predict
+    model = load_model(os.path.join('artifacts','training', 'model.h5'))
+NameError: name 'load_model' is not defined
+[2024-11-26 09:56:18,149: INFO: _internal: 127.0.0.1 - - [26/Nov/2024 09:56:18] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-11-26 09:58:00,151: INFO: _internal: 127.0.0.1 - - [26/Nov/2024 09:58:00] "GET / HTTP/1.1" 200 -]
+[2024-11-26 09:58:17,897: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "D:\ML Block\Projects\ETE AI Projects\kidney-disease-classification-dl-project\src\kidney_cnn_classifier\pipeline\prediction.py", line 13, in predict
+    model = load_model(os.path.join('artifacts','training', 'model.h5'))
+NameError: name 'load_model' is not defined
+[2024-11-26 09:58:17,899: INFO: _internal: 127.0.0.1 - - [26/Nov/2024 09:58:17] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-11-26 09:58:36,203: INFO: _internal: 127.0.0.1 - - [26/Nov/2024 09:58:36] "GET / HTTP/1.1" 200 -]
+[2024-11-26 09:58:54,367: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.215:8080]
+[2024-11-26 09:58:54,369: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-11-26 09:58:56,442: INFO: _internal: 127.0.0.1 - - [26/Nov/2024 09:58:56] "GET / HTTP/1.1" 200 -]
+[2024-11-26 09:59:03,459: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "D:\ML Block\Projects\ETE AI Projects\kidney-disease-classification-dl-project\src\kidney_cnn_classifier\pipeline\prediction.py", line 19, in predict
+    result = np.argmax(model.predict(test_image), axis=1)
+NameError: name 'np' is not defined
+[2024-11-26 09:59:03,462: INFO: _internal: 127.0.0.1 - - [26/Nov/2024 09:59:03] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-11-26 09:59:31,964: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.215:8080]
+[2024-11-26 09:59:31,965: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-11-26 09:59:32,067: INFO: _internal: 127.0.0.1 - - [26/Nov/2024 09:59:32] "GET / HTTP/1.1" 200 -]
+[2024-11-26 09:59:40,267: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+  File "D:\ML Block\Projects\ETE AI Projects\kidney-disease-classification-dl-project\src\kidney_cnn_classifier\pipeline\prediction.py", line 18, in predict
+    test_image = numpy.expand_dims(test_image, axis=0)
+NameError: name 'numpy' is not defined
+[2024-11-26 09:59:40,270: INFO: _internal: 127.0.0.1 - - [26/Nov/2024 09:59:40] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-11-26 10:00:07,065: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.215:8080]
+[2024-11-26 10:00:07,065: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-11-26 10:00:08,577: INFO: _internal: 127.0.0.1 - - [26/Nov/2024 10:00:08] "GET / HTTP/1.1" 200 -]
+[2024-11-26 10:00:14,468: INFO: _internal: 127.0.0.1 - - [26/Nov/2024 10:00:14] "POST /predict HTTP/1.1" 200 -]
+[2024-11-26 10:00:27,646: INFO: _internal: 127.0.0.1 - - [26/Nov/2024 10:00:27] "POST /predict HTTP/1.1" 200 -]
+[2024-11-26 10:00:43,924: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<<]
+[2024-11-26 10:00:43,929: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-26 10:00:43,932: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-26 10:00:43,933: INFO: common: created directory at: artifacts]
+[2024-11-26 10:00:43,934: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-26 10:00:43,934: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1_ikKoonQOS56n_hS_j5WBYY9XfYA4YeI/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-11-26 10:02:47,203: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1_ikKoonQOS56n_hS_j5WBYY9XfYA4YeI/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-11-26 10:02:54,413: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<< 
+
+x==============x]
+[2024-11-26 10:02:54,414: INFO: main: *****************]
+[2024-11-26 10:02:54,414: INFO: main: >>>>>>>>> stage Prepare base model started <<<<<<<<<<<]
+[2024-11-26 10:02:54,416: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-26 10:02:54,418: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-26 10:02:54,418: INFO: common: created directory at: artifacts]
+[2024-11-26 10:02:54,419: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-11-26 10:02:54,879: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-11-26 10:02:55,099: INFO: main: >>>>>>>>>> stage Prepare base model completed <<<<<<
+
+x============x]
+[2024-11-26 10:02:55,099: INFO: main: *****************]
+[2024-11-26 10:02:55,099: INFO: main: >>>>>>> stage Training started <<<<<<<<<]
+[2024-11-26 10:02:55,102: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-26 10:02:55,105: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-26 10:02:55,105: INFO: common: created directory at: artifacts]
+[2024-11-26 10:02:55,105: INFO: common: created directory at: artifacts\training]
+[2024-11-26 10:11:02,903: INFO: main: >>>>>>>> stage Training completed <<<<<<<<
+
+x=========x]
+[2024-11-26 10:11:02,904: INFO: main: ****************]
+[2024-11-26 10:11:02,904: INFO: main: >>>>>>> stage Model Evaluation with MLflow stage started <<<<<<<<<]
+[2024-11-26 10:11:02,908: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-26 10:11:02,909: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-26 10:11:02,910: INFO: common: created directory at: artifacts]
+[2024-11-26 10:13:47,000: INFO: common: json file saved at: scores.json]
+[2024-11-26 10:13:47,000: INFO: main: >>>>>>>>>> stage Model Evaluation with MLflow stage completed <<<<<<<<
+
+x=========x]
+[2024-11-26 10:13:47,836: INFO: _internal: 127.0.0.1 - - [26/Nov/2024 10:13:47] "GET /train HTTP/1.1" 200 -]
+[2024-11-26 10:13:48,184: INFO: _internal: 127.0.0.1 - - [26/Nov/2024 10:13:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2024-11-26 10:23:43,205: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<<]
+[2024-11-26 10:23:43,208: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-26 10:23:43,212: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-26 10:23:43,212: INFO: common: created directory at: artifacts]
+[2024-11-26 10:23:43,212: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-26 10:23:43,213: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1_ikKoonQOS56n_hS_j5WBYY9XfYA4YeI/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-11-26 10:28:36,781: INFO: copy_model: Creating directory: model/model.h5 for the file: artifacts/training/model.h5]
+[2024-11-26 10:28:36,804: INFO: copy_model: Model file copied to: model/model.h5]
+[2024-11-26 10:33:23,553: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage' started <<<<<<<<]
+[2024-11-26 10:33:23,555: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-26 10:33:23,557: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-26 10:33:23,557: INFO: common: created directory at: artifacts]
+[2024-11-26 10:33:23,557: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-26 10:33:23,557: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1_ikKoonQOS56n_hS_j5WBYY9XfYA4YeI/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-11-26 10:35:42,807: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1_ikKoonQOS56n_hS_j5WBYY9XfYA4YeI/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-11-26 10:35:50,388: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage completed <<<<<<<.]
+[2024-11-26 10:36:35,409: INFO: stage_02_prepare_base_model: ********************]
+[2024-11-26 10:36:35,409: INFO: stage_02_prepare_base_model: >>>>>>>>> stage Prepare base model started <<<<<<<<<<<]
+[2024-11-26 10:36:35,412: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-26 10:36:35,414: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-26 10:36:35,414: INFO: common: created directory at: artifacts]
+[2024-11-26 10:36:35,414: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-11-26 10:36:35,824: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-11-26 10:36:36,028: INFO: stage_02_prepare_base_model: >>>>>>>>>> stage Prepare base model completed <<<<<<<<<<
+
+x===============x]
+[2024-11-26 10:36:48,523: INFO: stage_03_model_training: *************************]
+[2024-11-26 10:36:48,524: INFO: stage_03_model_training: >>>>>>> stage Training started <<<<<<<<<]
+[2024-11-26 10:36:48,526: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-26 10:36:48,528: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-26 10:36:48,528: INFO: common: created directory at: artifacts]
+[2024-11-26 10:36:48,528: INFO: common: created directory at: artifacts\training]
+[2024-11-26 10:44:39,675: INFO: stage_03_model_training: >>>>>>>> stage Training completed <<<<<<<<
+
+x=========x]
+[2024-11-26 10:57:45,569: INFO: stage_04_model_evaluation_with_mlflow: *************************]
+[2024-11-26 10:57:45,569: INFO: stage_04_model_evaluation_with_mlflow: >>>>>>> stage Evaluation stage started <<<<<<<<<]
+[2024-11-26 10:57:45,571: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-26 10:57:45,573: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-26 10:57:45,573: INFO: common: created directory at: artifacts]
+[2024-11-26 11:00:08,909: INFO: common: json file saved at: scores.json]
+[2024-11-26 11:00:08,910: INFO: stage_04_model_evaluation_with_mlflow: >>>>>>>> stage Evaluation stage completed <<<<<<<<
+
+x=========x]

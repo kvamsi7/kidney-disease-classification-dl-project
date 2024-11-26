@@ -38,6 +38,12 @@ stages:
       - artifacts/training/model.h5
 
   
+  copy_model:
+    cmd: copy artifacts\training\model.h5 model\model.h5
+    deps:
+      - artifacts/training/model.h5
+    outs:
+      - model/model.h5
 
   evaluation:
     cmd: python src/kidney_cnn_classifier/pipeline/stage_04_model_evaluation_with_mlflow.py
