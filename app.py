@@ -7,9 +7,9 @@ from kidney_cnn_classifier.utils.common import decodeImage,encodeImageIntoBase64
 os.putenv('LANG', 'en_US.UTF-8')
 os.putenv('LC_ALL', 'en_US.UTF-8')
 
-os.environ['MLFLOW_TRACKING_URI'] = "https://dagshub.com/kvamsi7/kidney-disease-classification-dl-project.mlflow"
-os.environ['MLFLOW_TRACKING_USERNAME'] = "kvamsi7"
-os.environ['MLFLOW_TRACKING_PASSWORD'] = "d6b1c8cf96f5b7cc6f735f6e0c8d127e5ad9c82d"
+# os.environ['MLFLOW_TRACKING_URI'] = "https://dagshub.com/kvamsi7/kidney-disease-classification-dl-project.mlflow"
+# os.environ['MLFLOW_TRACKING_USERNAME'] = "kvamsi7"
+# os.environ['MLFLOW_TRACKING_PASSWORD'] = "d6b1c8cf96f5b7cc6f735f6e0c8d127e5ad9c82d"
 
 # Create an instance of the ClientApp class for prediction
 app = Flask(__name__)
