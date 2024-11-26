@@ -970,3 +970,26 @@ x=========x]
 [2024-11-26 11:00:08,910: INFO: stage_04_model_evaluation_with_mlflow: >>>>>>>> stage Evaluation stage completed <<<<<<<<
 
 x=========x]
+[2024-11-26 11:04:13,387: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.215:8080]
+[2024-11-26 11:04:13,387: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-11-26 11:04:22,042: INFO: _internal: 127.0.0.1 - - [26/Nov/2024 11:04:22] "GET / HTTP/1.1" 200 -]
+[2024-11-26 11:04:28,037: INFO: _internal: 127.0.0.1 - - [26/Nov/2024 11:04:28] "POST /predict HTTP/1.1" 200 -]
+[2024-11-26 11:04:36,846: INFO: _internal: 127.0.0.1 - - [26/Nov/2024 11:04:36] "POST /predict HTTP/1.1" 200 -]
+[2024-11-26 11:07:19,105: INFO: _internal: 127.0.0.1 - - [26/Nov/2024 11:07:19] "GET / HTTP/1.1" 200 -]
+[2024-11-26 11:07:19,891: INFO: _internal: 127.0.0.1 - - [26/Nov/2024 11:07:19] "GET / HTTP/1.1" 200 -]
+[2024-11-26 11:07:20,367: INFO: _internal: 127.0.0.1 - - [26/Nov/2024 11:07:20] "GET / HTTP/1.1" 200 -]
+[2024-11-26 11:07:20,675: INFO: _internal: 127.0.0.1 - - [26/Nov/2024 11:07:20] "GET / HTTP/1.1" 200 -]
+[2024-11-26 11:07:20,856: INFO: _internal: 127.0.0.1 - - [26/Nov/2024 11:07:20] "GET / HTTP/1.1" 200 -]
+[2024-11-26 11:07:29,534: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.215:8080]
+[2024-11-26 11:07:29,534: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-11-26 11:07:30,210: INFO: _internal: 127.0.0.1 - - [26/Nov/2024 11:07:30] "GET / HTTP/1.1" 200 -]
+[2024-11-26 11:07:39,144: INFO: _internal: 127.0.0.1 - - [26/Nov/2024 11:07:39] "POST /predict HTTP/1.1" 200 -]
+[2024-11-26 11:07:53,691: INFO: _internal: 127.0.0.1 - - [26/Nov/2024 11:07:53] "POST /predict HTTP/1.1" 200 -]
+[2024-11-26 11:08:04,087: INFO: _internal: 127.0.0.1 - - [26/Nov/2024 11:08:04] "POST /predict HTTP/1.1" 200 -]
+[2024-11-26 11:08:11,580: INFO: _internal: 127.0.0.1 - - [26/Nov/2024 11:08:11] "POST /predict HTTP/1.1" 200 -]
