@@ -1,6 +1,6 @@
-from src.kidney_cnn_classifier.config.configuration import ConfigurationManager
-from src.kidney_cnn_classifier.compnents.model_evaluation_mlflow import Evaluation
-from src.kidney_cnn_classifier import logger
+from kidney_cnn_classifier.config.configuration import ConfigurationManager
+from kidney_cnn_classifier.compnents.model_evaluation_mlflow import Evaluation
+from kidney_cnn_classifier import logger
 
 
 
@@ -16,7 +16,7 @@ class EvaluationPipeline:
             eval_config = config.get_evaluation_config()
             evaluation = Evaluation(eval_config)
             evaluation.evaluation()
-            evaluation.log_into_mlflow()
+            # evaluation.log_into_mlflow()
         except Exception as e:
             raise e
 

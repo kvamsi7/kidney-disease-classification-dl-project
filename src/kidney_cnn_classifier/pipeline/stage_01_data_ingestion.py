@@ -1,6 +1,7 @@
-from src.kidney_cnn_classifier.config.configuration import ConfigurationManager
-from src.kidney_cnn_classifier.compnents.data_ingestion import DataIngestion
-from src.kidney_cnn_classifier import logger
+import os
+from kidney_cnn_classifier.config.configuration import ConfigurationManager
+from kidney_cnn_classifier.compnents.data_ingestion import DataIngestion
+from kidney_cnn_classifier import logger
 
 STAGE_NAME = 'Data Ingestion Stage'
 
@@ -17,7 +18,7 @@ class Data_ingestion_training_pipeline:
         data_ingestion.extract_zip_file()
 
 
-if __name__ == '___main__':
+if __name__ == '__main__':
     try:
         logger.info(f">>>>>> stage {STAGE_NAME}' started <<<<<<<<")
         

@@ -677,3 +677,104 @@ x=========x]
 [2024-11-23 00:39:20,238: INFO: main: >>>>>>>>>> stage Model Evaluation with MLflow stage completed <<<<<<<<
 
 x=========x]
+[2024-11-26 00:07:49,719: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage' started <<<<<<<<]
+[2024-11-26 00:07:49,721: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-26 00:07:49,723: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-26 00:07:49,723: INFO: common: created directory at: artifacts]
+[2024-11-26 00:07:49,723: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-26 00:07:49,724: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1_ikKoonQOS56n_hS_j5WBYY9XfYA4YeI/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-11-26 00:10:16,620: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1_ikKoonQOS56n_hS_j5WBYY9XfYA4YeI/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-11-26 00:10:24,838: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage completed <<<<<<<.]
+[2024-11-26 00:17:34,046: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage' started <<<<<<<<]
+[2024-11-26 00:17:34,050: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-26 00:17:34,051: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-26 00:17:34,051: INFO: common: created directory at: artifacts]
+[2024-11-26 00:17:34,052: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-26 00:17:34,053: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1_ikKoonQOS56n_hS_j5WBYY9XfYA4YeI/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-11-26 00:20:25,071: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1_ikKoonQOS56n_hS_j5WBYY9XfYA4YeI/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-11-26 00:20:32,370: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage completed <<<<<<<.]
+[2024-11-26 00:21:50,086: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage' started <<<<<<<<]
+[2024-11-26 00:21:50,088: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-26 00:21:50,089: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-26 00:21:50,090: INFO: common: created directory at: artifacts]
+[2024-11-26 00:21:50,090: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-26 00:21:50,090: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1_ikKoonQOS56n_hS_j5WBYY9XfYA4YeI/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-11-26 00:24:01,459: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1_ikKoonQOS56n_hS_j5WBYY9XfYA4YeI/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-11-26 00:24:08,907: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage completed <<<<<<<.]
+[2024-11-26 00:24:45,777: INFO: stage_02_prepare_base_model: ********************]
+[2024-11-26 00:24:45,777: INFO: stage_02_prepare_base_model: >>>>>>>>> stage Prepare base model started <<<<<<<<<<<]
+[2024-11-26 00:24:45,780: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-26 00:24:45,781: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-26 00:24:45,782: INFO: common: created directory at: artifacts]
+[2024-11-26 00:24:45,782: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-11-26 00:24:46,221: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-11-26 00:24:46,425: INFO: stage_02_prepare_base_model: >>>>>>>>>> stagePrepare base model completed <<<<<<<<<<
+
+x===============x]
+[2024-11-26 00:31:44,751: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage' started <<<<<<<<]
+[2024-11-26 00:31:44,753: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-26 00:31:44,754: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-26 00:31:44,754: INFO: common: created directory at: artifacts]
+[2024-11-26 00:31:44,755: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-26 00:31:44,755: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1_ikKoonQOS56n_hS_j5WBYY9XfYA4YeI/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-11-26 00:33:32,641: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1_ikKoonQOS56n_hS_j5WBYY9XfYA4YeI/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-11-26 00:33:40,014: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion Stage completed <<<<<<<.]
+[2024-11-26 00:34:24,273: INFO: stage_02_prepare_base_model: ********************]
+[2024-11-26 00:34:24,273: INFO: stage_02_prepare_base_model: >>>>>>>>> stage Prepare base model started <<<<<<<<<<<]
+[2024-11-26 00:34:24,275: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-26 00:34:24,276: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-26 00:34:24,277: INFO: common: created directory at: artifacts]
+[2024-11-26 00:34:24,277: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-11-26 00:34:24,648: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-11-26 00:34:24,821: INFO: stage_02_prepare_base_model: >>>>>>>>>> stage Prepare base model completed <<<<<<<<<<
+
+x===============x]
+[2024-11-26 00:34:29,591: INFO: stage_03_model_training: *************************]
+[2024-11-26 00:34:29,591: INFO: stage_03_model_training: >>>>>>> stage Training started <<<<<<<<<]
+[2024-11-26 00:34:29,593: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-26 00:34:29,595: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-26 00:34:29,595: INFO: common: created directory at: artifacts]
+[2024-11-26 00:34:29,596: INFO: common: created directory at: artifacts\training]
+[2024-11-26 00:42:00,134: INFO: stage_03_model_training: >>>>>>>> stage Training completed <<<<<<<<
+
+x=========x]
+[2024-11-26 00:42:09,778: INFO: stage_04_model_evaluation_with_mlflow: *************************]
+[2024-11-26 00:42:09,778: INFO: stage_04_model_evaluation_with_mlflow: >>>>>>> stage Evaluation stage started <<<<<<<<<]
+[2024-11-26 00:42:09,780: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-26 00:42:09,782: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-26 00:42:09,783: INFO: common: created directory at: artifacts]
+[2024-11-26 00:44:24,109: INFO: common: json file saved at: scores.json]
+[2024-11-26 00:44:25,652: ERROR: stage_04_model_evaluation_with_mlflow: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: '']
+Traceback (most recent call last):
+  File "src/kidney_cnn_classifier/pipeline/stage_04_model_evaluation_with_mlflow.py", line 28, in <module>
+    obj.main()
+  File "src/kidney_cnn_classifier/pipeline/stage_04_model_evaluation_with_mlflow.py", line 21, in main
+    raise e
+  File "src/kidney_cnn_classifier/pipeline/stage_04_model_evaluation_with_mlflow.py", line 19, in main
+    evaluation.log_into_mlflow()
+  File "D:\ML Block\Projects\ETE AI Projects\kidney-disease-classification-dl-project\src\kidney_cnn_classifier\compnents\model_evaluation_mlflow.py", line 57, in log_into_mlflow
+    with mlflow.start_run(run_name='Run2'):
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\tracking\fluent.py", line 418, in start_run
+    active_run_obj = client.create_run(
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\tracking\client.py", line 393, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 168, in create_run
+    return self.store.create_run(
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\store\tracking\rest_store.py", line 209, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\store\tracking\rest_store.py", line 82, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\utils\rest_utils.py", line 370, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+  File "C:\Users\vamsi7\anaconda3\envs\prj_kdny\lib\site-packages\mlflow\utils\rest_utils.py", line 246, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: ''
+[2024-11-26 00:45:47,830: INFO: stage_04_model_evaluation_with_mlflow: *************************]
+[2024-11-26 00:45:47,830: INFO: stage_04_model_evaluation_with_mlflow: >>>>>>> stage Evaluation stage started <<<<<<<<<]
+[2024-11-26 00:45:47,833: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-26 00:45:47,834: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-26 00:45:47,835: INFO: common: created directory at: artifacts]
+[2024-11-26 00:48:00,023: INFO: common: json file saved at: scores.json]
+[2024-11-26 00:48:00,023: INFO: stage_04_model_evaluation_with_mlflow: >>>>>>>> stage Evaluation stage completed <<<<<<<<
+
+x=========x]

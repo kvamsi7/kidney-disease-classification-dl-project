@@ -3,7 +3,7 @@ import urllib.request as request
 from zipfile import ZipFile
 import tensorflow as tf
 import time
-from src.kidney_cnn_classifier.entity.config_entity import TrainingConfig
+from kidney_cnn_classifier.entity.config_entity import TrainingConfig
 from pathlib import Path
 
 

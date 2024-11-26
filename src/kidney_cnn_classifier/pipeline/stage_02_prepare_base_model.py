@@ -1,6 +1,6 @@
-from src.kidney_cnn_classifier.config.configuration import ConfigurationManager
-from src.kidney_cnn_classifier.compnents.prepare_base_model import PrepareBaseModel
-from src.kidney_cnn_classifier import logger
+from kidney_cnn_classifier.config.configuration import ConfigurationManager
+from kidney_cnn_classifier.compnents.prepare_base_model import PrepareBaseModel
+from kidney_cnn_classifier import logger
 
 STAGE_NAME = "Prepare base model"
 
@@ -23,7 +23,7 @@ if __name__ == "__main__":
         logger.info(f">>>>>>>>> stage {STAGE_NAME} started <<<<<<<<<<<")
         obj = PrepareBaseModelTrainingPipeline()
         obj.main()
-        logger.info(f">>>>>>>>>> stage{STAGE_NAME} completed <<<<<<<<<<\n\nx===============x")
+        logger.info(f">>>>>>>>>> stage {STAGE_NAME} completed <<<<<<<<<<\n\nx===============x")
     except Exception as e:
         logger.exception(e)
         raise e

@@ -58,3 +58,10 @@ export MLFLOW_TRACKING_USERNAME = "username"
 
 export MLFLOW_TRACKING_PASSWORD = "d6b1c8cf96f5b7cc6f735f6e0c8d127e5ad9c82d"
 ```
+
+
+### DVC cmd
+
+1. dvc init
+2. dvc repro
+3. dvc dag

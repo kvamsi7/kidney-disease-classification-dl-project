@@ -1,7 +1,7 @@
-from src.kidney_cnn_classifier.constants import *
+from kidney_cnn_classifier.constants import *
 import os
-from src.kidney_cnn_classifier.utils.common import read_yaml,create_directories
-from src.kidney_cnn_classifier.entity.config_entity import (DataIngestionConfig,PrepareBaseModelConfig,TrainingConfig,EvaluationConfig)
+from kidney_cnn_classifier.utils.common import read_yaml,create_directories
+from kidney_cnn_classifier.entity.config_entity import (DataIngestionConfig,PrepareBaseModelConfig,TrainingConfig,EvaluationConfig)
 
 class ConfigurationManager:
     def __init__(

@@ -1,6 +1,6 @@
-from src.kidney_cnn_classifier.config.configuration import ConfigurationManager
-from src.kidney_cnn_classifier.compnents.model_training import Training
-from src.kidney_cnn_classifier import logger
+from kidney_cnn_classifier.config.configuration import ConfigurationManager
+from kidney_cnn_classifier.compnents.model_training import Training
+from kidney_cnn_classifier import logger
 
 
 STAGE_NAME = "Training"
