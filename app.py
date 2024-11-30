@@ -12,6 +12,8 @@ os.putenv('LC_ALL', 'en_US.UTF-8')
 # os.environ['MLFLOW_TRACKING_PASSWORD'] = "d6b1c8cf96f5b7cc6f735f6e0c8d127e5ad9c82d"
 
 # Create an instance of the ClientApp class for prediction
+# test 1 
+
 app = Flask(__name__)
 CORS(app)
 
