@@ -1098,3 +1098,95 @@ x=========x]
 [2024-12-03 00:50:13,354: INFO: _internal: [33mPress CTRL+C to quit[0m]
 [2024-12-03 00:50:16,587: INFO: _internal: 127.0.0.1 - - [03/Dec/2024 00:50:16] "GET / HTTP/1.1" 200 -]
 [2024-12-03 00:50:22,048: INFO: _internal: 127.0.0.1 - - [03/Dec/2024 00:50:22] "POST /predict HTTP/1.1" 200 -]
+[2024-12-03 02:09:17,569: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<<]
+[2024-12-03 02:09:17,571: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-12-03 02:09:17,572: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-03 02:09:17,573: INFO: common: created directory at: artifacts]
+[2024-12-03 02:09:17,574: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-12-03 02:09:17,575: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1_ikKoonQOS56n_hS_j5WBYY9XfYA4YeI/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-12-03 02:11:25,077: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1_ikKoonQOS56n_hS_j5WBYY9XfYA4YeI/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-12-03 02:11:32,245: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<< 
+
+x==============x]
+[2024-12-03 02:11:32,245: INFO: main: *****************]
+[2024-12-03 02:11:32,245: INFO: main: >>>>>>>>> stage Prepare base model started <<<<<<<<<<<]
+[2024-12-03 02:11:32,247: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-12-03 02:11:32,248: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-03 02:11:32,248: INFO: common: created directory at: artifacts]
+[2024-12-03 02:11:32,249: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-12-03 02:11:32,687: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-12-03 02:11:32,991: INFO: main: >>>>>>>>>> stage Prepare base model completed <<<<<<
+
+x============x]
+[2024-12-03 02:11:32,991: INFO: main: *****************]
+[2024-12-03 02:11:32,992: INFO: main: >>>>>>> stage Training started <<<<<<<<<]
+[2024-12-03 02:11:32,993: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-12-03 02:11:32,994: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-03 02:11:32,995: INFO: common: created directory at: artifacts]
+[2024-12-03 02:11:32,995: INFO: common: created directory at: artifacts\training]
+[2024-12-03 02:12:58,713: INFO: main: >>>>>>> stage Data Ingestion stage started <<<<<<<<]
+[2024-12-03 02:12:58,716: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-12-03 02:12:58,717: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-03 02:12:58,718: INFO: common: created directory at: artifacts]
+[2024-12-03 02:12:58,718: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-12-03 02:12:58,719: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1_ikKoonQOS56n_hS_j5WBYY9XfYA4YeI/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-12-03 02:14:50,103: INFO: data_ingestion: Download data from https://drive.google.com/file/d/1_ikKoonQOS56n_hS_j5WBYY9XfYA4YeI/view?usp=drive_link into file artifacts/data_ingestion/data.zip]
+[2024-12-03 02:14:55,680: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<< 
+
+x==============x]
+[2024-12-03 02:14:55,680: INFO: main: *****************]
+[2024-12-03 02:14:55,680: INFO: main: >>>>>>>>> stage Prepare base model started <<<<<<<<<<<]
+[2024-12-03 02:14:55,682: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-12-03 02:14:55,683: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-03 02:14:55,684: INFO: common: created directory at: artifacts]
+[2024-12-03 02:14:55,684: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-12-03 02:14:56,032: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-12-03 02:14:56,184: INFO: main: >>>>>>>>>> stage Prepare base model completed <<<<<<
+
+x============x]
+[2024-12-03 02:14:56,185: INFO: main: *****************]
+[2024-12-03 02:14:56,185: INFO: main: >>>>>>> stage Training started <<<<<<<<<]
+[2024-12-03 02:14:56,187: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-12-03 02:14:56,188: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-03 02:14:56,188: INFO: common: created directory at: artifacts]
+[2024-12-03 02:14:56,189: INFO: common: created directory at: artifacts\training]
+[2024-12-03 07:15:35,580: INFO: main: >>>>>>>> stage Training completed <<<<<<<<
+
+x=========x]
+[2024-12-03 07:15:35,581: INFO: main: ****************]
+[2024-12-03 07:15:35,581: INFO: main: >>>>>>> stage Model Evaluation with MLflow stage started <<<<<<<<<]
+[2024-12-03 07:15:35,582: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-12-03 07:15:35,584: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-12-03 07:15:35,584: INFO: common: created directory at: artifacts]
+[2024-12-03 07:17:23,856: INFO: common: json file saved at: scores.json]
+[2024-12-03 07:17:23,856: INFO: main: >>>>>>>>>> stage Model Evaluation with MLflow stage completed <<<<<<<<
+
+x=========x]
+[2024-12-03 07:53:01,862: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.215:8080]
+[2024-12-03 07:53:01,862: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-12-03 07:53:19,047: INFO: _internal: 127.0.0.1 - - [03/Dec/2024 07:53:19] "GET / HTTP/1.1" 200 -]
+[2024-12-03 07:53:28,275: INFO: _internal: 127.0.0.1 - - [03/Dec/2024 07:53:28] "POST /predict HTTP/1.1" 200 -]
+[2024-12-03 07:54:17,665: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.215:8080]
+[2024-12-03 07:54:17,665: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-12-03 07:54:24,830: INFO: _internal: 127.0.0.1 - - [03/Dec/2024 07:54:24] "GET / HTTP/1.1" 200 -]
+[2024-12-03 07:54:30,657: INFO: _internal: 127.0.0.1 - - [03/Dec/2024 07:54:30] "POST /predict HTTP/1.1" 200 -]
+[2024-12-03 07:55:31,192: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.215:8080]
+[2024-12-03 07:55:31,192: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-12-03 07:55:32,709: INFO: _internal: 127.0.0.1 - - [03/Dec/2024 07:55:32] "GET / HTTP/1.1" 200 -]
+[2024-12-03 07:55:38,958: INFO: _internal: 127.0.0.1 - - [03/Dec/2024 07:55:38] "POST /predict HTTP/1.1" 200 -]
+[2024-12-03 07:55:45,279: INFO: _internal: 127.0.0.1 - - [03/Dec/2024 07:55:45] "POST /predict HTTP/1.1" 200 -]
+[2024-12-03 07:55:51,914: INFO: _internal: 127.0.0.1 - - [03/Dec/2024 07:55:51] "POST /predict HTTP/1.1" 200 -]
+[2024-12-03 07:55:58,466: INFO: _internal: 127.0.0.1 - - [03/Dec/2024 07:55:58] "POST /predict HTTP/1.1" 200 -]
+[2024-12-03 07:56:09,021: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x00000298D19D9F70> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-12-03 07:56:09,029: INFO: _internal: 127.0.0.1 - - [03/Dec/2024 07:56:09] "POST /predict HTTP/1.1" 200 -]
+[2024-12-03 07:56:14,992: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x00000298D19D9430> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2024-12-03 07:56:14,996: INFO: _internal: 127.0.0.1 - - [03/Dec/2024 07:56:14] "POST /predict HTTP/1.1" 200 -]
