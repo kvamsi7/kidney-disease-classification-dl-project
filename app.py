@@ -1,8 +1,8 @@
 from flask import Flask, request, jsonify,render_template
 import os
 from flask_cors import CORS, cross_origin
-from kidney_cnn_classifier.pipeline.prediction import PredictionPipeline
-from kidney_cnn_classifier.utils.common import decodeImage,encodeImageIntoBase64
+from src.kidney_cnn_classifier.pipeline.prediction import PredictionPipeline
+from src.kidney_cnn_classifier.utils.common import decodeImage,encodeImageIntoBase64
 
 os.putenv('LANG', 'en_US.UTF-8')
 os.putenv('LC_ALL', 'en_US.UTF-8')
@@ -21,9 +21,6 @@ class ClientApp:
     def __init__(self):
         self.filename = "inputImage.jpg"
         self.classifier = PredictionPipeline(self.filename)
-
-    def predict(self):
-        pass
 
 @app.route('/', methods=['GET'])
 @cross_origin()

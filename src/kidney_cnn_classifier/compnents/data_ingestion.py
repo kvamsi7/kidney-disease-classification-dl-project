@@ -1,9 +1,9 @@
 import os
 import zipfile
 import gdown
-from kidney_cnn_classifier import logger
-from kidney_cnn_classifier.utils.common import get_size
-from kidney_cnn_classifier.entity.config_entity import (DataIngestionConfig)
+from src.kidney_cnn_classifier import logger
+from src.kidney_cnn_classifier.utils.common import get_size
+from src.kidney_cnn_classifier.entity.config_entity import (DataIngestionConfig)
 
 
 

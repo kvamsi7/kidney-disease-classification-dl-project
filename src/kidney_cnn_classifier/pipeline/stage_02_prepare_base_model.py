@@ -1,6 +1,6 @@
-from kidney_cnn_classifier.config.configuration import ConfigurationManager
-from kidney_cnn_classifier.compnents.prepare_base_model import PrepareBaseModel
-from kidney_cnn_classifier import logger
+from src.kidney_cnn_classifier.config.configuration import ConfigurationManager
+from src.kidney_cnn_classifier.compnents.prepare_base_model import PrepareBaseModel
+from src.kidney_cnn_classifier import logger
 
 STAGE_NAME = "Prepare base model"
 

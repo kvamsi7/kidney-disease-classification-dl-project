@@ -3,8 +3,8 @@ import mlflow
 import mlflow.keras
 import tensorflow as tf
 from urllib.parse import urlparse
-from kidney_cnn_classifier.entity.config_entity import EvaluationConfig
-from kidney_cnn_classifier.utils.common import read_yaml,create_directories,save_json
+from src.kidney_cnn_classifier.entity.config_entity import EvaluationConfig
+from src.kidney_cnn_classifier.utils.common import read_yaml,create_directories,save_json
 
 class Evaluation:
     def __init__(self,config:EvaluationConfig):

@@ -1,6 +1,6 @@
-from kidney_cnn_classifier.config.configuration import ConfigurationManager
-from kidney_cnn_classifier.compnents.model_evaluation_mlflow import Evaluation
-from kidney_cnn_classifier import logger
+from src.kidney_cnn_classifier.config.configuration import ConfigurationManager
+from src.kidney_cnn_classifier.compnents.model_evaluation_mlflow import Evaluation
+from src.kidney_cnn_classifier import logger
 
 
 

@@ -1,7 +1,7 @@
 import os
-from kidney_cnn_classifier.config.configuration import ConfigurationManager
-from kidney_cnn_classifier.compnents.data_ingestion import DataIngestion
-from kidney_cnn_classifier import logger
+from src.kidney_cnn_classifier.config.configuration import ConfigurationManager
+from src.kidney_cnn_classifier.compnents.data_ingestion import DataIngestion
+from src.kidney_cnn_classifier import logger
 
 STAGE_NAME = 'Data Ingestion Stage'
 
